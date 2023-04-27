@@ -1,0 +1,54 @@
+# 如果想要增加配置，需要在这里添加了之后，再到 util.app_config.py 的 APP_CONFIG 类中加入对应的属性
+
+
+
+#  Feishu 飞书
+APP_ID: cli_xxx
+APP_SECRET: xxx
+APP_ENCRYPT_KEY: xxx
+APP_VERIFICATION_TOKEN: xxx
+# 请确保和飞书应用管理平台中的设置一致
+BOT_NAME: xxx
+# openAI key 支持负载均衡 可以填写多个key 用逗号分隔
+OPENAI_KEY: sk-xxx,sk-xxx,sk-xxx
+
+# 服务器配置
+HTTP_PORT: 8080
+HTTPS_PORT: 8081
+
+# Prompt
+DEFAULT_PROMPT: "你是一个AI聊天助手，尽量保证你的回复内容准确、精简"
+PROMPT_DESCRIPTION_LIST:
+  - "AI翻译"
+  - "招聘HR"
+
+PROMPT_VALUE_LIST:
+  - "You are an AI assistant that helps people translate between English and Chinese.
+     If I only give you one word in English, you first translate, and in the nextline you shoule explain the world using Chinese detailly.
+     Do not do any other things, just translate the word."
+  - "我想让你担任招聘人员。我将提供一些关于职位空缺的信息，而你的工作是制定寻找合格申请人的策略。这可能包括通过社交媒体、社交活动甚至参加招聘会接触潜在候选人，以便为每个职位找到最合适的人选。"
+
+
+# 聊天模型配置
+
+# 用哪个模型api，可选值：'openai','chatGLM', 'azure'
+LLM: 'chatGLM'
+# LLM: 'openai'
+
+# chatGLM 配置
+CHATGLM_API_HOST: http://localhost:7899  # 自己搭建的chatGLM，如果是在本机默认的脚本，则不用修改
+
+
+# OpenAI 配置
+# openai 地址, 一般不需要修改, 除非你有自己的反向代理
+API_URL: https://api.openai.com
+# 访问OpenAI的代理设置, 例如 "http://127.0.0.1:7890", ""代表不使用代理
+HTTP_PROXY: ""
+
+
+# Azure 配置
+IS_AZURE: false
+AZURE_API_HOST: https://xxx.openai.azure.com/
+AZURE_API_KEY: xxx
+GPT_MODEL: gpt-3.5-turbo
+
