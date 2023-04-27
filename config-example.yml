@@ -36,7 +36,7 @@ LLM: 'chatGLM'
 # LLM: 'openai'
 
 # chatGLM 配置
-CHATGLM_API_HOST: http://localhost:7899  # 自己搭建的chatGLM，如果是在本机默认的脚本，则不用修改
+CHATGLM_API_HOST: http://localhost:8000  # 自己搭建的chatGLM，如果是在本机默认的脚本，则不用修改
 
 
 # OpenAI 配置
