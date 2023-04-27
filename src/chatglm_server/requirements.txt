@@ -1,0 +1,6 @@
+transformers==4.27.1
+torch>=1.10
+accelerate
+
+fastapi
+unicorn
