@@ -80,3 +80,9 @@ im:chat:readonly(获取群组信息)
 im:chat(获取与更新群组信息)
 ```
 ## Docker部署方法（待更新）
+
+
+## 赞助感谢
+
+友情感谢 'Find My Ai' 提供的部分经费赞助！
+
